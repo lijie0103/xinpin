@@ -1,0 +1,361 @@
+        body,
+        ul,
+        li,
+        p,
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+        /* 头部导航 */
+        ol,
+        ul {
+            list-style: none;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+
+        .header {}
+
+        .header>.nav {
+            margin: 0 auto;
+            background-color: blueviolet;
+            width: 1200px;
+            text-align: center;
+        }
+
+        .header>.nav>li {
+            float: left;
+            width: 150px;
+            position: relative;
+            line-height: 2em;
+            cursor: pointer;
+        }
+
+        .header>.nav::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .header>.nav>li>.nav_son {
+            position: absolute;
+            display: none;
+            background-color: brown;
+            width: 150px;
+            text-align: center;
+        }
+
+        .header>.nav>li:hover>.nav_son {
+            display: block;
+        }
+
+        .header>.nav>li>.nav_son>li:hover {
+            background-color: burlywood;
+        }
+
+        /* 推销图片 */
+        .pic {}
+
+        /* 新品首发 */
+        .news {}
+
+        .news1 {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 1em 0;
+        }
+
+        .news1>.a1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            color: black;
+            padding: 0 1em;
+            text-decoration: none;
+        }
+
+        .news1>.a1:hover {
+            color: coral;
+        }
+
+        .news1>.sp1 {
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            font-size: smaller;
+            color: crimson;
+            padding: 0 2em;
+        }
+
+        .news1>.a2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: smaller;
+            color: black;
+            text-decoration: none;
+        }
+
+        .news1>.a2:hover {
+            color: coral;
+        }
+
+        .news>.list1 {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 1em 0;
+        }
+            
+        .news>.list1::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .news>.list1>li {
+            width: 285px;
+            height: 300px;
+            margin-left: 10px;
+            margin-bottom: 1em;
+            float: left;
+        }
+
+        .news>.list1>li.item1 {
+            text-align: center;
+        }
+
+        .news>.list1>li.item1>.picture {
+            padding-bottom: 1em;
+            background-color: #f4f4f4;
+            height: 220px;
+            box-sizing: border-box;
+        }
+
+        .news>.list1>li.item1>.introduce>.active {
+            display: inline-block;
+            background-color: #e36944;
+            color: #f4f4f4;
+            margin: 5px;
+        }
+
+        .news>.list1>li.item1>.introduce>.price {
+            color: #e36944;
+        }
+
+        .news>.list1>li.item1>.picture>hover {
+            background-image: url(./img/3.webp);
+        }
+
+        /* 人气推荐 */
+        .pop {}
+
+        .pop1 {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 1em 0;
+        }
+
+        .pop1>.a1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            color: black;
+            padding: 0 1em;
+            text-decoration: none;
+        }
+
+        .pop1>.a1:hover {
+            color: coral;
+        }
+
+        .pop1>.sp1 {
+            font-family: "Microsoft Yahei", "微软雅黑", verdana;
+            color: black;
+            padding: 0 2em;
+        }
+
+        .pop1>.sp1:hover {
+            color: coral;
+        }
+
+        .pop1>.a2 {
+            font-family: "Microsoft Yahei", "微软雅黑", verdana;
+            color: black;
+            text-decoration: none;
+            padding: 0 2em;
+        }
+
+        .pop1>.a2:hover {
+            color: coral;
+        }
+
+        .pop1>.a3 {
+            font-family: "Microsoft Yahei", "微软雅黑", verdana;
+            color: black;
+            text-decoration: none;
+            padding: 0 2em;
+        }
+
+        .pop1>.a3:hover {
+            color: coral;
+        }
+
+        .pop>.list2 {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 1em 0;
+            background-color: #f4f0ea;
+        }
+
+        .pop>.list2::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .pop>.list2>li {
+            width: 240px;
+            height: 300px;
+            margin-right: 10px;
+            float: left;
+        }
+
+        .pop>.list2>li:first-child {
+            width: 450px;
+            height: 610px;
+        }
+
+        .pop>.list2>li:nth-child(2),
+        .pop>.list2>li:nth-child(3),
+        .pop>.list2>li:nth-child(4) {
+            margin-bottom: 10px;
+        }
+
+        .pop>.list2>li:nth-child(4),
+        .pop>.list2>li:nth-child(7) {
+            margin-right: 0;
+        }
+
+        .pop li.item2 {
+            text-align: center;
+        }
+
+        .pop li.item2>.picture {
+            padding-bottom: 1em;
+            background-color: #ffffff;
+            height: 220px;
+            box-sizing: border-box;
+        }
+
+        .pop li.item2>.introduce>.active {
+            display: inline-block;
+            background-color: #e36944;
+            color: #ffffff;
+        }
+
+        .pop li.item2>.introduce>.price {
+            color: #e36944;
+        }
+
+        .pop li.item2:first-child>.picture {
+            height: 450px;
+        }
+
+        .pop li.item2>.picture:hover {
+            padding: 5px;
+        }
+
+        /* 限时购 */
+        .lim {}
+        .lim1{
+            width: 1200px;
+            margin: 0 auto;
+            padding: 1em 0;
+        }
+        .lim1>.a1{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24px;
+            text-decoration: none;
+            color: black;
+        }
+        .lim1>.a1:hover{
+            color: coral;
+        }
+        .lim>.list3 {
+            border: violet 1px;
+            width: 1200px;
+            height: 600px;
+            margin-inline-start: 0 auto;
+            padding: 0;
+        }
+
+        .lim>.list3>li::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .lim>.list3>li {
+            width: 450px;
+            height: 300px;
+            float: left;
+        }
+
+        .lim>.list3>li:first-child {
+            width: 300px;
+            height: 600px;
+        }
+
+        .lim>.list3>li.item3>.item4>.picture {
+            height: 300px;
+            width: 200px;
+        }
+        .lim>.list3>li.item3>.item4>.introduce>.active{
+            margin: 1em 0;
+        }
+        .lim>.list3>li.item3>.item4>.introduce>.name{
+            margin: 1em 0;
+            color: #a699b3;
+            font-size: 14px;
+        }
+        .lim>.list3>li.item3>.item4>.introduce>.sur{
+            margin: 1em 0;
+            color: #a699b3;
+            font-size: 14px;
+        }
+        .lim>.list3>li.item3>.item4>.introduce>.price{
+            margin: 1em 0;
+            color: #be4141;
+        }
+        .lim>.list3>li.item3>.item4>.introduce>.price>.sp1{
+            font-size: 24px;
+            
+        }
+        .lim>.list3>li.item3>.item4>.introduce>.now{
+            margin: 1em 0;
+            text-decoration: none;
+            background-color: red;
+            color: white;
+        }
+        .item4{
+            width: 450px;
+            height: 300px;
+        }
+        .lim>.list3>li.item3>.item4::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .lim>.list3>li.item3>.item4>.picture{
+            float: left;
+            width: 200px;
+            height: 300px;
+        }
+        .lim>.list3>li.item3>.item4>.introduce>.active{
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+        }
+        .lim>.list3>li.item3>.item4>.introduce>.active:hover{
+            color: coral;
+        }
+        .lim>.list3>li.item3>.item4>.introduce>.now:hover{
+            color: coral;
+            display: inline-block;
+        }
